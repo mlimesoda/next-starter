@@ -1,0 +1,15 @@
+extends:
+  - airbnb-typescript-prettier
+  - plugin:react/jsx-runtime
+rules:
+  'react/jsx-props-no-spreading': 'off'
+  'import/extensions': 'off'
+  'import/no-unresolved': 'error'
+plugins:
+  - import
+settings:
+  'import/parsers':
+    '@typescript-eslint/parser': ['.ts', '.tsx']
+  'import/resolver':
+    typescript:
+      project: '.'

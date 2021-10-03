@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .border-b-min {
+    @apply border-b border-gray-200 shadow-sm;
+  }
+
+  .border-t-min {
+    @apply border-t border-gray-200;
+  }
+
+  .children-nice-lis > * {
+    @apply px-4 hover:text-gray-500;
+  }
+
+  .article > p {
+    @apply px-2 my-4;
+  }
+
+  .code-block {
+    @apply bg-gray-900 text-white h-8 rounded-md flex items-center px-4;
+  }
+}

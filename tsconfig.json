@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "$styles/*": ["./src/styles/*"],
+      "$atoms/*": ["./src/components/atoms/*"],
+      "$molecules/*": ["./src/components/molecules/*"],
+      "$organisms/*": ["./src/components/organisms/*"],
+      "$templates/*": ["./src/components/templates/*"],
+      "$component-types/*": ["./src/components/shared-types/*"],
+      "$components/*": ["./src/components/*"],
+      "$hooks/*": ["./src/hooks/*"],
+      "$hooks-types/*": ["./src/hooks/shared-types/*"],
+      "$pages/*": ["./src/pages/*"],
+      "$store-types/*": ["./src/store/shared-types/*"],
+      "$store/*": ["./src/store/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "./src/**/*"],
+  "exclude": ["node_modules"]
+}
