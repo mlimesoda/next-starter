@@ -1,7 +1,6 @@
-import 'tailwindcss/tailwind.css';
-import '$styles/index.css';
-
 import type { AppProps } from 'next/app';
+
+import '$styles/index.css';
 
 import Footer from '$organisms/Footer';
 import Nav from '$organisms/Nav';
